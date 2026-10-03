@@ -5,7 +5,10 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon src/index.js",
+    "worker": "node src/workers/worker.js",
+    "set-tickets": "docker exec -it local-redis redis-cli SET tickets",
+    "load-test": "artillery run load-test.yml"
   },
   "keywords": [],
   "author": "",
