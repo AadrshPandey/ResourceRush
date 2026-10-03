@@ -1,0 +1,23 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type" : "module",
+  "scripts": {
+    "dev" : "nodemon src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bullmq": "^6.3.11",
+    "express": "^5.2.1",
+    "ioredis": "^6.0.0",
+    "mysql2": "^3.24.5"
+  },
+  "devDependencies": {
+    "artillery": "^2.0.34",
+    "nodemon": "^3.1.14"
+  }
+}
